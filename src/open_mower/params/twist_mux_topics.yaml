@@ -21,3 +21,7 @@ topics:
     topic   : override_vel
     timeout : 0.5
     priority: 100
+
+# twist_mux requires this key to exist even when unused (newer ros-noetic-twist-mux
+# releases fail to start without it - this project doesn't use lock topics).
+locks: []
