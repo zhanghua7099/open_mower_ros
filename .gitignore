@@ -61,3 +61,6 @@ cmake-build-debug/
 .vscode
 .venv
 src/cmake-build-debug-ros
+
+# Local (non-Docker) sim scratch data - see doc/running-native.md
+.native-sim/
