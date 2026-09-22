@@ -66,6 +66,7 @@ VSLAM 要解决的问题，本质上跟现在 `xbot_positioning` 在做的事是
 
 1. [running-native.md](running-native.md) + [getting-started.md](getting-started.md)——跑起来，建立直觉。
 2. [architecture.md](architecture.md)——建立模块地图和全局流水线的心智模型。
+2.5. 需要查某个模块具体订阅/发布了什么话题、参数默认值、内部算法细节时，查 [modules-reference.md](modules-reference.md)——逐模块的详细参考手册，带精确到文件行号的代码引用。
 3. `xbot_positioning`（本文档第 1 步）——现有定位实现，是你未来改动最直接相关的部分。
 4. `AreaRecordingBehavior` + `mower_map`（本文档第 2 步）——现有"建图"实现，理清它跟你要做的建图不是一回事。
 5. `mower_logic` 状态机骨架（本文档第 3 步）——新模块要在哪个阶段介入。
