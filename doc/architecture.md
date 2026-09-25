@@ -66,6 +66,8 @@ flowchart TD
 | `xbot_driver_gps` | 真实硬件用：u-blox GPS 接收机的底层驱动。仿真里由 `mower_simulation` 直接模拟出 GPS 数据，不需要这个包。 |
 | `ros_ntrip_client` | 真实硬件用：连接 NTRIP 差分定位服务，把 RTCM 校正数据喂给 GPS，做到厘米级 RTK 定位精度。仿真不需要（`_ntrip_client.launch` 只在 `open_mower.launch` 里，不在仿真 launch 里）。 |
 
+想搞懂 RTK 厘米级定位的原理——差分改正数怎么来、怎么进 GPS 模块、Fixed/Float 怎么判定、EKF 怎么融合和降级——看 [rtk-positioning.md](rtk-positioning.md)。
+
 ### 地图与路径规划
 
 | 包 | 作用 |
